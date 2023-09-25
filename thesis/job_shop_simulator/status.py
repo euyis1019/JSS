@@ -80,5 +80,6 @@ class Status:
         return [self._instance.operations[source_id] for source_id in source_ids]
 
     def get_filter_machine(self, operation_id: UUID, machine_filter: Callable[[SimMachine], bool]) -> list[SimMachine]:
+        #fliter函数，只保留能让machine_filter为true的machine
         return list(filter(machine_filter, [self._instance.machines[machine_id]
                                             for machine_id in self._instance.operation_machines[operation_id]]))

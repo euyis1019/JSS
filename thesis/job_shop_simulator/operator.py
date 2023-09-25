@@ -5,7 +5,7 @@ from simpy.core import SimTime
 
 Arrangement = namedtuple("Arrangement", ["machine_id", "operation_time"])
 
-
+#比instance的等级更高
 class Operator:
     def __init__(self, instance):
         self._instance = instance
@@ -26,6 +26,7 @@ class Operator:
         del self._instance.jobs[job_id]
 
     def delete_operation(self, operation_id: UUID):
+        #删除与该操作相连的job、operations、machines
         self._instance.operation_machines.remove_node(operation_id)
         self._instance.operation_relations.remove_node(operation_id)
         self._instance.job_operations.remove_node(operation_id)
