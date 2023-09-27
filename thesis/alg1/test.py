@@ -53,9 +53,18 @@ class Test(Algorithm):
         source_operations = status.get_all_source_operations()
         arrange_source_operations(source_operations, status, operator)
 
+
+    """报错点,这里应该是不完善
+            这里应该要判断一下，如果当前操作的job是source_job，那么就直接返回，
+            因为source_job的source_operation已经全部执行完毕，不需要再执行了。"""
     def on_job_arrived(self, job_id: UUID, status: Status, operator: Operator) -> None:
+        #这里我想打印job_id的编号
+        print("on_job_arrived-----begin")
+        print( status.job_raw(job_id).id)
         source_operations = status.get_job_source_operations(job_id)
+        print(status.operation_raw(source_operations[0]).id)
         arrange_source_operations(source_operations, status, operator)
+        """报错点"""
 
     def on_decide_job_arrive_time(self, job: Job) -> SimTime:
         return job.get_attribute("arrive_time")
@@ -65,13 +74,17 @@ class Test(Algorithm):
         machine.set_attribute("running", False)
 
 
-jobs = [Job(1, {"arrive_time": 3})]
-operations = [Operation(2), Operation(4)]
+jobs = [Job(2, {"arrive_time": 5})]
+jobs.append(Job(1, {"arrive_time": 3}))
+operations = [Operation(11), Operation(12)]
+operations.append(Operation(21))
 machines = [Machine(3)]
-job_operations = [JobOperation(1, 2), JobOperation(1, 4)]
-operation_relations = [OperationRelation(2, 4)]
-operation_machines = [OperationMachine(2, 3, {"operation_time": 3}),
-                      OperationMachine(4, 3, {"operation_time": 5})]
+job_operations = [JobOperation(1, 11), JobOperation(1, 12)]
+job_operations.append(JobOperation(2, 21))
+operation_relations = [OperationRelation(11, 12)]
+operation_machines = [OperationMachine(11, 3, {"operation_time": 3}),
+                      OperationMachine(12, 3, {"operation_time": 5}),
+                                            OperationMachine(21, 3, {"operation_time": 10})]
 
 config = Config(jobs, operations, machines, job_operations, operation_relations, operation_machines, None)
 

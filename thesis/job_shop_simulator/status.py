@@ -69,9 +69,29 @@ class Status:
         return [self._instance.operations[operation_id]
                 for operation_id in self._instance.operation_relations.successors(operation_id)]
 
+
+    def set_operation_relations_level(self, job_id: UUID, operation_relations:DiGraph):
+        # Returns the level of the operation relations.
+        sim_Operation = self.get_job_source_operations(job_id)[0]
+        i = 0
+        while True:
+            sim_Operation.set_attribute('Level', i)
+            i += 1
+            if operation_relations.successors(sim_Operation.id):
+                sim_Operation = self.get_operation_successors(sim_Operation.id)[0]
+            else:
+                break
+
     def get_job_source_operations(self, job_id: UUID) -> list[SimOperation]:
+        print("这是",self.job_raw(job_id).id)
         source_ids = [operation_id for operation_id in self._instance.job_operations[job_id]
                       if self._instance.operation_relations.in_degree(operation_id) == 0]
+        print("source_ids",source_ids)
+        for sourceOperation_id in source_ids:
+            print(self.operation_raw(sourceOperation_id).id)
+            """a = self._instance.operations[source_id]
+            print(self.operation_raw(a).id)"""
+        print("____get_job_source_operations_______")
         return [self._instance.operations[source_id] for source_id in source_ids]
 
     def get_all_source_operations(self) -> list[SimOperation]:

@@ -37,6 +37,7 @@ class Instance:
         run the simulator instance
         """
         for job in self.config.jobs.values():
+            """这里做个排序FIFO"""
             self._env.process(self._run_job(job))
         for sim_machine in self.machines.values():
             sim_machine_process = self._env.process(self._run_machine(sim_machine))
@@ -54,18 +55,17 @@ class Instance:
         self.algorithm.on_init_machine(machine)
         while True:
             arrangement = yield self.arrangements.get(lambda a: a.machine_id == machine.id)
-            try:
-                yield self._env.timeout(arrangement.operation_time)
-                self.algorithm.on_operation_finished(machine.id, self._status, self._operator)
-            except Interrupt as i:
+            yield self._env.timeout(arrangement.operation_time)
+            self.algorithm.on_operation_finished(machine.id, self._status, self._operator)
+            """ except Interrupt as i:
                 self.algorithm.on_machine_offline(machine.id, self._status, self._operator)
                 yield self._env.timeout(i.cause)
-                self.algorithm.on_machine_online(machine.id, self._status, self._operator)
+                self.algorithm.on_machine_online(machine.id, self._status, self._operator)"""
 
     def _run_job(self, job: Job):
         arrive_time = self.algorithm.on_decide_job_arrive_time(job)
         yield self._env.timeout(arrive_time)
-        sim_job = self.__init__job(job)
+        sim_job = self.__init__job(job)#uuid实例+建立图关系
         self.algorithm.on_job_arrived(sim_job.id, self._status, self._operator)
 
     def __init__job(self, job: Job) -> SimJob:
@@ -90,4 +90,6 @@ class Instance:
             to_sim_id = operation_id_to_sim_id[to_operation_id]
             self.operation_relations.add_edge(from_sim_id, to_sim_id,
                                               sim=SimOperationRelation(from_sim_id, to_sim_id, raw))
+
+        self._status.set_operation_relations_level(sim_job.id,self.operation_relations)
         return sim_job
