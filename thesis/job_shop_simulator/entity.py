@@ -23,7 +23,7 @@ class Attributes:
         self.attributes[key] = value
 
     def get_attribute(self, key):
-        return self.attributes[key]
+        return self.attributes.get(key)
 
 
 class Entity(Id, Attributes):

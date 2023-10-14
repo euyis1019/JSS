@@ -32,12 +32,15 @@ class Instance:
             self.machines[sim_machine.id] = sim_machine
             self.machine_id_to_sim_id[machine.id] = sim_machine.id
 
+    @property
+    def now(self):
+        return self._env.now
+
     def run(self):
         """
         run the simulator instance
         """
         for job in self.config.jobs.values():
-            """这里做个排序FIFO"""
             self._env.process(self._run_job(job))
         for sim_machine in self.machines.values():
             sim_machine_process = self._env.process(self._run_machine(sim_machine))
@@ -45,6 +48,11 @@ class Instance:
         self._env.run()
 
     def _run_machine_offline(self, machine: Machine, process: Process):
+        """
+        interrupt the machine when goes to the interruption time
+        :param machine: the machine may be offline
+        :param process: the machine instance
+        """
         offline = self.algorithm.on_decide_machine_offline_time(machine)
         offline.sort(key=lambda off: off[0])
         for start, end in offline:
@@ -52,20 +60,34 @@ class Instance:
             process.interrupt(end - start)
 
     def _run_machine(self, machine: SimMachine):
+        """
+        receive arrangement to the machine and trigger timeout event to simulate
+        operation. After that, tell the algorithm that the arrangement has been
+        finished.
+        When suffering interruption, tell the algorithm it has been
+        interrupted and trigger timeout event to simulate interruption. Then,
+        tell the algorithm it has been recovered.
+        :param machine: the sim machine entity
+        """
         self.algorithm.on_init_machine(machine)
         while True:
-            arrangement = yield self.arrangements.get(lambda a: a.machine_id == machine.id)
-            yield self._env.timeout(arrangement.operation_time)
-            self.algorithm.on_operation_finished(machine.id, self._status, self._operator)
-            """ except Interrupt as i:
+            try:
+                arrangement = yield self.arrangements.get(lambda a: a.machine_id == machine.id)
+                yield self._env.timeout(arrangement.operation_time)
+                self.algorithm.on_operation_finished(machine.id, self._status, self._operator)
+            except Interrupt as i:
                 self.algorithm.on_machine_offline(machine.id, self._status, self._operator)
                 yield self._env.timeout(i.cause)
-                self.algorithm.on_machine_online(machine.id, self._status, self._operator)"""
+                self.algorithm.on_machine_online(machine.id, self._status, self._operator)
 
     def _run_job(self, job: Job):
+        """
+        arrange the timeout event to trigger the job's arrival
+        :param job: the job will arrive
+        """
         arrive_time = self.algorithm.on_decide_job_arrive_time(job)
         yield self._env.timeout(arrive_time)
-        sim_job = self.__init__job(job)#uuid实例+建立图关系
+        sim_job = self.__init__job(job)
         self.algorithm.on_job_arrived(sim_job.id, self._status, self._operator)
 
     def __init__job(self, job: Job) -> SimJob:
@@ -77,6 +99,7 @@ class Instance:
             sim_operation = SimOperation(self.config.operations[operation_id])
             operation_id_to_sim_id[operation_id] = sim_operation.id
             self.operations[sim_operation.id] = sim_operation
+            self.operation_relations.add_node(sim_operation.id)
             self.job_operations.add_edge(sim_job.id, sim_operation.id,
                                          sim=SimJobOperation(sim_job.id, sim_operation.id, raw))
             for operation_id, machine_id, raw in self.config.operation_machines.edges(operation_id, "raw"):
@@ -90,6 +113,4 @@ class Instance:
             to_sim_id = operation_id_to_sim_id[to_operation_id]
             self.operation_relations.add_edge(from_sim_id, to_sim_id,
                                               sim=SimOperationRelation(from_sim_id, to_sim_id, raw))
-
-        self._status.set_operation_relations_level(sim_job.id,self.operation_relations)
         return sim_job

@@ -5,11 +5,9 @@ class TreeNode:
         self.left = left
         self.right = right
         self.root = 'Max'
-
-
 def parse_expression(expression):
-    operators = ['Max', 'Min', '+', '-', '*', '/']
-    variables = ['NIQ', 'WIQ', 'MRT', 'TTIQ', 'UT', 'DT', 'PT', 'TWT', 'TIS', 'NTR']
+    operators = ['protectedDiv','Max', 'Min', '+', '-', '*', '/', 'max', 'min', 'neg', 'add', 'sub', 'mul', 'div']
+    variables = ['NIQ', 'WIQ', 'MRT', 'TTIQ', 'UT', 'DT', 'PT', 'TWT', 'TIS', 'NTR', 'MWT', 'OWT', 'WRK']
 
     tokens = expression.replace('(', ' ( ').replace(')', ' ) ').split()
 
@@ -48,8 +46,6 @@ def parse_expression(expression):
     length=len(output)
     return output,OutDict,length
 
-
-# 新增的函数，用于根据后缀表达式创建二叉树
 def create_binary_tree(postfix_tokens,Dict):
     stack = []
 
@@ -67,7 +63,6 @@ def create_binary_tree(postfix_tokens,Dict):
 expression = input()
 postfix_tokens,OutDict,length = parse_expression(expression)
 root = create_binary_tree(postfix_tokens,OutDict)
-
 
 
 import pygraphviz as pgv

@@ -1,5 +1,7 @@
+import simpy
 class MachineData:
-    def __init__(self):
+    def __init__(self, env):
+        self.env = env
         # 初始化所有的数据为0或空列表，具体的初始化可以根据实际情况进行调整
         self.operations_queue = []  # 机器队列中的操作列表
         self.work_in_queue = []     # 机器队列中的工作列表

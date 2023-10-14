@@ -22,7 +22,7 @@ class Algorithm:
 
     def on_job_arrived(self, job_id: UUID, status, operator) -> None:
         """
-        the func is called when a new job is arrived
+        the func is called when a new job has arrived
         :param operator: the operator of sim environment
         :param status: the status of sim environment
         :param job_id: the arrived job
