@@ -1,0 +1,208 @@
+/Users/eric/anaconda3/envs/OOPAssesm/bin/python /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevconsole.py --mode=client --host=127.0.0.1 --port=57821
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/eric/Documents/GitHub/JSS'])
+PyDev console: starting.
+Python 3.9.16 (main, Mar  8 2023, 04:29:24)
+[Clang 14.0.6 ] on darwin
+runfile('/Users/eric/Documents/GitHub/JSS/thesis/alg1/alg_eric.py', wdir='/Users/eric/Documents/GitHub/JSS/thesis/alg1')
+897.9882714669141
+Generation 0:
+Best Pr: neg(sub(max(neg(neg(OWT)), sub(mul(WRK, NOR), max(OWT, WRK))), mul(neg(sub(NOR, PT)), protectedDiv(neg(WRK), add(PT, MWT)))))
+Best Ps: mul(add(neg(MWT), sub(TIS, MWT)), neg(add(NOR, PT)))
+gen	nevals	avg    	std    	min   	max
+Generation 1:
+Best Pr: protectedDiv(max(neg(WRK), mul(NOR, TIS)), PT)
+Best Ps: min(protectedDiv(sub(max(WRK, MWT), TIS), max(NOR, NOR)), mul(min(OWT, NOR), add(MWT, TIS)))
+gen	nevals	avg    	std    	min   	max
+Generation 2:
+Best Pr: max(add(max(neg(NOR), max(TIS, OWT)), sub(sub(min(protectedDiv(OWT, TIS), protectedDiv(PT, PT)), MWT), add(PT, PT))), sub(protectedDiv(neg(OWT), add(TIS, TIS)), protectedDiv(add(MWT, MWT), protectedDiv(WRK, OWT))))
+Best Ps: min(protectedDiv(sub(mul(PT, WRK), TIS), max(NOR, NOR)), mul(min(OWT, NOR), add(MWT, TIS)))
+gen	nevals	avg    	std    	min   	max
+Generation 3:
+Best Pr: max(add(WRK, sub(OWT, PT)), sub(neg(NOR), add(WRK, MWT)))
+Best Ps: min(add(add(min(WRK, OWT), neg(PT)), sub(neg(MWT), min(PT, OWT))), sub(min(NOR, add(NOR, PT)), max(OWT, sub(add(TIS, OWT), mul(PT, MWT)))))
+gen	nevals	avg    	std    	min   	max
+Generation 4:
+Best Pr: max(NOR, sub(mul(protectedDiv(PT, PT), max(MWT, WRK)), min(PT, PT)))
+Best Ps: neg(min(add(add(sub(WRK, WRK), protectedDiv(TIS, WRK)), sub(neg(MWT), min(PT, OWT))), sub(sub(WRK, WRK), sub(NOR, TIS))))
+gen	nevals	avg    	std    	min   	max
+Generation 5:
+Best Pr: sub(min(TIS, MWT), mul(PT, WRK))
+Best Ps: max(sub(mul(WRK, TIS), min(MWT, TIS)), neg(PT))
+gen	nevals	avg    	std    	min   	max
+Generation 6:
+Best Pr: add(sub(mul(mul(NOR, PT), mul(neg(PT), NOR)), MWT), neg(neg(WRK)))
+Best Ps: max(sub(min(MWT, PT), neg(WRK)), add(min(OWT, WRK), MWT))
+gen	nevals	avg    	std    	min   	max
+Generation 7:
+Best Pr: protectedDiv(WRK, protectedDiv(neg(PT), neg(sub(NOR, MWT))))
+Best Ps: sub(TIS, add(MWT, min(add(add(max(NOR, NOR), protectedDiv(TIS, WRK)), sub(neg(MWT), min(PT, OWT))), sub(sub(WRK, WRK), mul(WRK, WRK)))))
+gen	nevals	avg    	std    	min   	max
+Generation 8:
+Best Pr: add(sub(mul(mul(NOR, PT), mul(neg(PT), NOR)), WRK), NOR)
+Best Ps: sub(OWT, min(mul(neg(PT), mul(mul(WRK, add(protectedDiv(protectedDiv(PT, TIS), min(PT, PT)), PT)), PT)), OWT))
+gen	nevals	avg    	std    	min   	max
+Generation 9:
+Best Pr: max(protectedDiv(add(sub(mul(WRK, PT), neg(WRK)), max(mul(PT, NOR), add(PT, TIS))), protectedDiv(mul(sub(PT, neg(WRK)), mul(protectedDiv(PT, PT), PT)), NOR)), sub(neg(mul(min(MWT, MWT), max(MWT, WRK))), add(mul(add(NOR, MWT), max(WRK, WRK)), sub(min(max(NOR, WRK), OWT), min(OWT, neg(max(NOR, NOR)))))))
+Best Ps: sub(min(sub(sub(protectedDiv(max(PT, min(OWT, MWT)), add(NOR, sub(mul(WRK, WRK), mul(WRK, NOR)))), sub(sub(NOR, PT), add(MWT, TIS))), min(min(TIS, PT), max(OWT, TIS))), sub(mul(WRK, PT), sub(TIS, WRK))), mul(neg(NOR), neg(OWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 10:
+Best Pr: add(neg(add(PT, MWT)), protectedDiv(protectedDiv(min(NOR, WRK), MWT), add(PT, WRK)))
+Best Ps: sub(protectedDiv(protectedDiv(OWT, OWT), MWT), add(protectedDiv(TIS, PT), max(TIS, sub(PT, neg(MWT)))))
+gen	nevals	avg    	std    	min   	max
+Generation 11:
+Best Pr: max(protectedDiv(add(sub(mul(WRK, PT), neg(WRK)), max(mul(PT, NOR), add(PT, TIS))), protectedDiv(PT, max(sub(NOR, MWT), neg(TIS)))), sub(neg(mul(min(MWT, MWT), max(MWT, WRK))), add(NOR, sub(min(max(NOR, WRK), OWT), min(OWT, neg(max(NOR, NOR)))))))
+Best Ps: sub(protectedDiv(protectedDiv(PT, mul(sub(NOR, MWT), neg(PT))), add(TIS, NOR)), sub(MWT, WRK))
+gen	nevals	avg    	std    	min   	max
+Generation 12:
+Best Pr: add(neg(add(PT, MWT)), protectedDiv(protectedDiv(min(NOR, add(neg(PT), add(PT, MWT))), MWT), mul(TIS, NOR)))
+Best Ps: sub(sub(mul(mul(add(OWT, TIS), max(TIS, OWT)), add(max(WRK, NOR), max(TIS, TIS))), OWT), protectedDiv(mul(min(NOR, sub(NOR, WRK)), max(add(WRK, PT), NOR)), add(min(protectedDiv(mul(max(MWT, WRK), add(OWT, NOR)), PT), add(TIS, TIS)), OWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 13:
+Best Pr: max(protectedDiv(add(max(PT, add(TIS, MWT)), max(NOR, add(PT, TIS))), protectedDiv(mul(sub(PT, neg(MWT)), mul(PT, PT)), max(min(NOR, TIS), neg(TIS)))), NOR)
+Best Ps: sub(protectedDiv(max(NOR, protectedDiv(NOR, PT)), min(PT, add(protectedDiv(protectedDiv(min(sub(PT, MWT), sub(NOR, WRK)), sub(sub(NOR, MWT), PT)), min(PT, PT)), max(PT, PT)))), min(WRK, MWT))
+gen	nevals	avg    	std    	min   	max
+Generation 14:
+Best Pr: max(max(mul(sub(PT, TIS), sub(MWT, TIS)), add(TIS, min(mul(TIS, sub(min(MWT, PT), WRK)), min(PT, NOR)))), WRK)
+Best Ps: neg(sub(protectedDiv(OWT, add(min(sub(TIS, MWT), min(OWT, TIS)), mul(max(TIS, OWT), WRK))), PT))
+gen	nevals	avg    	std    	min   	max
+Generation 15:
+Best Pr: max(max(mul(sub(PT, TIS), sub(MWT, TIS)), add(TIS, min(mul(TIS, sub(min(MWT, PT), WRK)), min(PT, OWT)))), WRK)
+Best Ps: min(add(add(MWT, neg(PT)), sub(neg(max(add(MWT, PT), protectedDiv(TIS, PT))), min(PT, OWT))), sub(min(protectedDiv(TIS, MWT), add(NOR, PT)), protectedDiv(protectedDiv(min(add(OWT, TIS), mul(OWT, WRK)), mul(min(sub(PT, protectedDiv(max(max(NOR, mul(add(NOR, TIS), add(TIS, OWT))), NOR), OWT)), MWT), sub(protectedDiv(max(max(WRK, TIS), NOR), add(NOR, PT)), PT))), min(sub(mul(NOR, add(min(OWT, PT), sub(NOR, TIS))), min(MWT, MWT)), neg(protectedDiv(WRK, MWT))))))
+gen	nevals	avg    	std    	min   	max
+Generation 16:
+Best Pr: max(max(mul(sub(PT, TIS), sub(MWT, TIS)), add(TIS, min(mul(TIS, sub(min(MWT, PT), WRK)), min(PT, NOR)))), WRK)
+Best Ps: sub(NOR, add(sub(sub(MWT, sub(WRK, min(OWT, MWT))), mul(WRK, WRK)), min(add(protectedDiv(WRK, WRK), add(MWT, OWT)), MWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 17:
+Best Pr: max(max(mul(sub(PT, TIS), sub(MWT, TIS)), add(protectedDiv(mul(NOR, MWT), add(NOR, PT)), min(mul(TIS, sub(min(MWT, PT), WRK)), min(PT, NOR)))), WRK)
+Best Ps: max(sub(PT, sub(sub(NOR, PT), add(MWT, NOR))), mul(neg(NOR), min(MWT, MWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 18:
+Best Pr: max(max(mul(sub(PT, TIS), sub(MWT, TIS)), add(protectedDiv(mul(NOR, MWT), add(NOR, PT)), NOR)), WRK)
+Best Ps: min(add(NOR, sub(neg(max(add(MWT, PT), protectedDiv(TIS, PT))), mul(neg(NOR), min(MWT, TIS)))), sub(min(protectedDiv(TIS, MWT), add(NOR, PT)), protectedDiv(PT, TIS)))
+gen	nevals	avg    	std    	min   	max
+Generation 19:
+Best Pr: mul(neg(min(mul(add(sub(neg(WRK), mul(TIS, TIS)), MWT), TIS), OWT)), neg(PT))
+Best Ps: sub(protectedDiv(PT, add(min(WRK, min(PT, NOR)), NOR)), sub(PT, protectedDiv(OWT, add(PT, add(PT, PT)))))
+gen	nevals	avg    	std    	min   	max
+Generation 20:
+Best Pr: mul(neg(min(mul(sub(neg(OWT), protectedDiv(TIS, TIS)), min(mul(NOR, PT), protectedDiv(mul(TIS, max(mul(NOR, PT), mul(TIS, TIS))), TIS))), OWT)), neg(PT))
+Best Ps: neg(min(add(sub(sub(MWT, sub(WRK, OWT)), mul(WRK, protectedDiv(NOR, min(NOR, TIS)))), min(add(protectedDiv(WRK, WRK), add(MWT, OWT)), MWT)), min(NOR, OWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 21:
+Best Pr: mul(neg(min(mul(sub(neg(OWT), protectedDiv(TIS, TIS)), min(mul(NOR, max(NOR, protectedDiv(TIS, NOR))), protectedDiv(TIS, TIS))), OWT)), neg(PT))
+Best Ps: neg(neg(max(add(max(OWT, OWT), PT), OWT)))
+gen	nevals	avg    	std    	min   	max
+Generation 22:
+Best Pr: sub(max(sub(NOR, WRK), PT), mul(PT, TIS))
+Best Ps: sub(sub(add(sub(OWT, WRK), neg(PT)), PT), protectedDiv(mul(TIS, protectedDiv(protectedDiv(TIS, NOR), PT)), add(min(sub(TIS, MWT), mul(NOR, OWT)), mul(max(neg(TIS), OWT), PT))))
+gen	nevals	avg    	std    	min   	max
+Generation 23:
+Best Pr: sub(max(sub(NOR, add(OWT, OWT)), PT), mul(PT, TIS))
+Best Ps: min(protectedDiv(sub(PT, protectedDiv(max(max(NOR, mul(add(NOR, PT), add(TIS, OWT))), MWT), add(PT, add(PT, PT)))), add(NOR, PT)), mul(PT, protectedDiv(MWT, protectedDiv(protectedDiv(OWT, NOR), min(WRK, OWT)))))
+gen	nevals	avg    	std    	min   	max
+Generation 24:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), NOR)
+Best Ps: WRK
+gen	nevals	avg    	std    	min   	max
+Generation 25:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), min(add(TIS, MWT), protectedDiv(min(neg(protectedDiv(PT, MWT)), OWT), WRK)))
+Best Ps: sub(sub(add(sub(OWT, WRK), protectedDiv(add(MWT, TIS), add(PT, add(PT, PT)))), PT), protectedDiv(mul(NOR, protectedDiv(protectedDiv(TIS, NOR), PT)), add(min(sub(TIS, max(TIS, TIS)), mul(NOR, OWT)), mul(max(neg(TIS), OWT), PT))))
+gen	nevals	avg    	std    	min   	max
+Generation 26:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), min(add(min(PT, TIS), MWT), protectedDiv(min(neg(protectedDiv(PT, MWT)), OWT), WRK)))
+Best Ps: sub(protectedDiv(protectedDiv(OWT, OWT), protectedDiv(PT, OWT)), protectedDiv(add(max(min(protectedDiv(neg(max(NOR, protectedDiv(NOR, PT))), WRK), MWT), NOR), sub(mul(NOR, add(min(OWT, PT), NOR)), min(MWT, MWT))), neg(WRK)))
+gen	nevals	avg    	std    	min   	max
+Generation 27:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), min(add(min(PT, TIS), MWT), protectedDiv(min(neg(protectedDiv(PT, MWT)), protectedDiv(min(WRK, TIS), mul(TIS, WRK))), WRK)))
+Best Ps: sub(sub(add(sub(OWT, WRK), protectedDiv(add(MWT, TIS), add(OWT, add(PT, PT)))), PT), protectedDiv(mul(WRK, protectedDiv(protectedDiv(TIS, NOR), PT)), add(min(sub(TIS, MWT), mul(NOR, OWT)), mul(max(neg(TIS), OWT), PT))))
+gen	nevals	avg    	std    	min   	max
+Generation 28:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), min(add(min(PT, TIS), MWT), protectedDiv(min(neg(protectedDiv(PT, MWT)), protectedDiv(min(WRK, TIS), mul(TIS, WRK))), WRK)))
+Best Ps: max(min(PT, sub(add(NOR, OWT), sub(sub(NOR, neg(PT)), add(add(mul(NOR, TIS), neg(MWT)), sub(OWT, MWT))))), mul(OWT, MWT))
+gen	nevals	avg    	std    	min   	max
+Generation 29:
+Best Pr: sub(min(PT, min(neg(mul(protectedDiv(MWT, min(MWT, TIS)), PT)), WRK)), min(add(min(mul(TIS, PT), TIS), MWT), protectedDiv(min(neg(protectedDiv(PT, MWT)), add(NOR, PT)), WRK)))
+Best Ps: min(add(max(max(TIS, TIS), sub(MWT, PT)), OWT), sub(min(protectedDiv(TIS, NOR), add(OWT, WRK)), protectedDiv(protectedDiv(min(add(PT, TIS), mul(OWT, WRK)), mul(NOR, sub(OWT, PT))), min(sub(PT, MWT), neg(protectedDiv(WRK, PT))))))
+gen	nevals	avg    	std    	min   	max
+Generation 30:
+Best Pr: mul(WRK, neg(add(min(PT, TIS), MWT)))
+Best Ps: add(NOR, min(add(PT, TIS), mul(TIS, WRK)))
+gen	nevals	avg    	std    	min   	max
+Generation 31:
+Best Pr: add(neg(add(PT, neg(TIS))), OWT)
+Best Ps: add(WRK, min(add(PT, TIS), mul(TIS, WRK)))
+gen	nevals	avg    	std    	min   	max
+Generation 32:
+Best Pr: sub(max(TIS, min(mul(add(min(TIS, TIS), sub(WRK, PT)), OWT), NOR)), neg(sub(NOR, PT)))
+Best Ps: neg(protectedDiv(NOR, OWT))
+gen	nevals	avg    	std    	min   	max
+Generation 33:
+Best Pr: max(neg(max(max(neg(min(WRK, TIS)), min(MWT, max(max(PT, add(protectedDiv(mul(NOR, PT), max(neg(TIS), PT)), PT)), mul(TIS, PT)))), max(MWT, PT))), min(mul(WRK, min(mul(NOR, OWT), min(OWT, neg(max(NOR, NOR))))), protectedDiv(TIS, mul(add(MWT, MWT), max(max(TIS, mul(TIS, max(mul(NOR, PT), add(sub(TIS, NOR), neg(TIS))))), WRK)))))
+Best Ps: max(add(add(add(TIS, WRK), max(OWT, protectedDiv(WRK, MWT))), OWT), sub(PT, WRK))
+gen	nevals	avg    	std    	min   	max
+Generation 34:
+Best Pr: add(neg(neg(sub(protectedDiv(protectedDiv(NOR, PT), protectedDiv(OWT, MWT)), add(PT, neg(TIS))))), min(PT, neg(TIS)))
+Best Ps: neg(protectedDiv(neg(add(neg(max(WRK, max(TIS, PT))), OWT)), sub(add(min(protectedDiv(max(TIS, MWT), PT), max(WRK, max(TIS, PT))), NOR), add(min(WRK, PT), protectedDiv(TIS, NOR)))))
+gen	nevals	avg    	std    	min   	max
+Generation 35:
+Best Pr: add(neg(neg(sub(protectedDiv(protectedDiv(NOR, add(max(MWT, mul(TIS, mul(TIS, protectedDiv(MWT, PT)))), MWT)), protectedDiv(OWT, MWT)), add(PT, neg(TIS))))), min(PT, neg(TIS)))
+Best Ps: sub(sub(max(OWT, max(min(protectedDiv(neg(max(NOR, protectedDiv(NOR, PT))), WRK), MWT), NOR)), PT), protectedDiv(TIS, add(min(max(WRK, WRK), mul(NOR, OWT)), mul(max(neg(TIS), OWT), PT))))
+gen	nevals	avg    	std    	min   	max
+Generation 36:
+Best Pr: add(neg(neg(sub(protectedDiv(protectedDiv(NOR, add(max(MWT, mul(TIS, mul(TIS, protectedDiv(MWT, PT)))), MWT)), protectedDiv(OWT, MWT)), add(PT, neg(TIS))))), min(PT, neg(NOR)))
+Best Ps: max(add(NOR, NOR), mul(NOR, WRK))
+gen	nevals	avg    	std    	min   	max
+Generation 37:
+Best Pr: add(neg(neg(sub(protectedDiv(protectedDiv(NOR, add(max(MWT, mul(TIS, neg(protectedDiv(TIS, PT)))), MWT)), protectedDiv(OWT, MWT)), add(PT, neg(TIS))))), min(PT, neg(TIS)))
+Best Ps: sub(sub(max(OWT, max(min(protectedDiv(neg(OWT), WRK), MWT), NOR)), PT), protectedDiv(TIS, add(min(max(WRK, WRK), mul(NOR, OWT)), mul(max(neg(TIS), OWT), PT))))
+gen	nevals	avg    	std    	min   	max
+Generation 38:
+Best Pr: sub(neg(MWT), max(max(min(TIS, TIS), add(sub(WRK, PT), PT)), mul(TIS, PT)))
+Best Ps: neg(protectedDiv(neg(add(neg(max(WRK, max(PT, PT))), sub(min(PT, OWT), protectedDiv(WRK, TIS)))), sub(add(min(PT, min(max(MWT, TIS), OWT)), NOR), add(min(WRK, PT), protectedDiv(TIS, NOR)))))
+gen	nevals	avg    	std    	min   	max
+Generation 39:
+Best Pr: sub(max(MWT, max(PT, add(sub(WRK, PT), PT))), max(MWT, neg(neg(PT))))
+Best Ps: min(add(add(NOR, neg(PT)), OWT), sub(sub(max(TIS, MWT), max(MWT, TIS)), protectedDiv(protectedDiv(min(NOR, mul(OWT, WRK)), mul(NOR, OWT)), min(protectedDiv(sub(OWT, min(sub(mul(MWT, min(protectedDiv(TIS, sub(OWT, PT)), sub(WRK, NOR))), PT), WRK)), WRK), NOR))))
+gen	nevals	avg    	std    	min   	max
+Generation 40:
+Best Pr: sub(max(min(neg(TIS), min(NOR, MWT)), max(PT, add(sub(WRK, PT), PT))), max(MWT, neg(neg(PT))))
+Best Ps: min(add(add(MWT, neg(protectedDiv(TIS, NOR))), PT), sub(sub(sub(TIS, NOR), max(MWT, add(WRK, NOR))), NOR))
+gen	nevals	avg    	std    	min   	max
+Generation 41:
+Best Pr: sub(max(max(MWT, WRK), max(PT, add(sub(WRK, PT), PT))), max(MWT, neg(neg(PT))))
+Best Ps: min(protectedDiv(neg(add(neg(max(WRK, max(PT, add(add(OWT, WRK), neg(WRK))))), sub(min(PT, OWT), protectedDiv(WRK, TIS)))), sub(add(min(PT, min(max(MWT, TIS), OWT)), NOR), WRK)), MWT)
+gen	nevals	avg    	std    	min   	max
+Generation 42:
+Best Pr: sub(neg(min(neg(TIS), min(NOR, MWT))), max(MWT, PT))
+Best Ps: neg(protectedDiv(WRK, OWT))
+gen	nevals	avg    	std    	min   	max
+Generation 43:
+Best Pr: sub(max(add(TIS, neg(protectedDiv(max(mul(NOR, PT), add(sub(TIS, NOR), neg(TIS))), NOR))), neg(TIS)), max(MWT, mul(max(mul(TIS, mul(TIS, min(min(PT, PT), mul(add(TIS, OWT), MWT)))), min(MWT, max(TIS, mul(TIS, PT)))), mul(MWT, mul(sub(OWT, MWT), sub(WRK, WRK))))))
+Best Ps: min(add(max(max(neg(max(WRK, TIS)), MWT), sub(MWT, PT)), OWT), sub(sub(WRK, TIS), add(MWT, sub(OWT, add(max(max(mul(NOR, WRK), MWT), sub(MWT, PT)), OWT)))))
+gen	nevals	avg    	std    	min   	max
+Generation 44:
+Best Pr: sub(max(max(protectedDiv(sub(min(OWT, MWT), max(OWT, TIS)), mul(add(protectedDiv(min(TIS, NOR), max(MWT, WRK)), MWT), max(MWT, WRK))), WRK), max(mul(OWT, TIS), add(sub(WRK, PT), PT))), max(MWT, neg(neg(PT))))
+Best Ps: PT
+gen	nevals	avg    	std    	min   	max
+Generation 45:
+Best Pr: add(neg(mul(NOR, max(min(WRK, neg(max(neg(protectedDiv(MWT, PT)), NOR))), PT))), min(sub(sub(OWT, MWT), add(TIS, TIS)), NOR))
+Best Ps: neg(protectedDiv(neg(add(neg(PT), MWT)), sub(neg(mul(WRK, PT)), add(OWT, protectedDiv(TIS, NOR)))))
+gen	nevals	avg    	std    	min   	max
+Generation 46:
+Best Pr: sub(neg(mul(PT, mul(NOR, PT))), add(mul(add(MWT, MWT), PT), OWT))
+Best Ps: min(add(add(NOR, neg(PT)), OWT), sub(sub(max(MWT, MWT), max(MWT, TIS)), protectedDiv(protectedDiv(WRK, mul(NOR, OWT)), min(protectedDiv(sub(sub(TIS, sub(sub(sub(TIS, PT), max(MWT, TIS)), protectedDiv(sub(min(WRK, WRK), mul(PT, WRK)), min(protectedDiv(NOR, WRK), neg(MWT))))), min(min(protectedDiv(TIS, MWT), add(TIS, WRK)), WRK)), WRK), NOR))))
+gen	nevals	avg    	std    	min   	max
+Generation 47:
+Best Pr: sub(neg(mul(PT, mul(NOR, PT))), add(mul(add(sub(add(OWT, NOR), neg(MWT)), MWT), PT), OWT))
+Best Ps: neg(protectedDiv(neg(add(neg(sub(protectedDiv(PT, neg(sub(PT, min(TIS, OWT)))), neg(WRK))), OWT)), sub(neg(mul(protectedDiv(WRK, mul(NOR, OWT)), PT)), NOR)))
+gen	nevals	avg    	std    	min   	max
+Generation 48:
+Best Pr: sub(neg(mul(PT, mul(NOR, PT))), add(mul(TIS, mul(min(TIS, WRK), protectedDiv(PT, PT))), OWT))
+Best Ps: neg(protectedDiv(min(min(sub(add(neg(NOR), mul(OWT, NOR)), MWT), mul(neg(TIS), OWT)), PT), PT))
+gen	nevals	avg    	std    	min   	max
+Generation 49:
+Best Pr: sub(neg(mul(PT, mul(NOR, PT))), add(mul(TIS, mul(NOR, OWT)), OWT))
+Best Ps: neg(protectedDiv(neg(add(min(OWT, WRK), OWT)), sub(neg(sub(OWT, OWT)), add(mul(MWT, MWT), protectedDiv(mul(WRK, NOR), NOR)))))
+gen	nevals	avg    	std    	min   	max

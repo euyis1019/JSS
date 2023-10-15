@@ -1,0 +1,208 @@
+/Users/eric/anaconda3/envs/OOPAssesm/bin/python /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevconsole.py --mode=client --host=127.0.0.1 --port=55998
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/eric/Documents/GitHub/JSS'])
+PyDev console: starting.
+Python 3.9.16 (main, Mar  8 2023, 04:29:24)
+[Clang 14.0.6 ] on darwin
+runfile('/Users/eric/Documents/GitHub/JSS/thesis/alg1/alg_eric.py', wdir='/Users/eric/Documents/GitHub/JSS/thesis/alg1')
+gen	nevals	avg    	std    	min   	max
+0  	152   	542.391	153.934	421.67	1144.62
+Generation 0:
+Best Pr: neg(max(neg(mul(OWT, WRK)), add(mul(OWT, TIS), max(MWT, PT))))
+Best Ps: min(add(min(protectedDiv(add(MWT, OWT), min(TIS, MWT)), mul(min(NOR, OWT), mul(PT, TIS))), neg(sub(sub(PT, MWT), max(OWT, OWT)))), neg(mul(max(sub(OWT, OWT), mul(OWT, MWT)), mul(neg(TIS), sub(WRK, MWT)))))
+1  	145   	533.449	192.641	415.145	1211.92
+Generation 1:
+Best Pr: sub(add(min(add(WRK, OWT), neg(PT)), neg(sub(MWT, NOR))), max(sub(max(WRK, PT), protectedDiv(PT, NOR)), sub(neg(WRK), min(TIS, WRK))))
+Best Ps: add(sub(NOR, PT), sub(mul(protectedDiv(OWT, TIS), add(PT, WRK)), min(neg(TIS), sub(TIS, MWT))))
+2  	152   	523.818	176.383	415.145	1221.28
+Generation 2:
+Best Pr: min(sub(max(mul(PT, NOR), sub(NOR, TIS)), max(min(OWT, WRK), NOR)), neg(max(min(WRK, OWT), max(OWT, max(PT, OWT)))))
+Best Ps: sub(mul(OWT, add(mul(NOR, WRK), mul(WRK, TIS))), add(add(NOR, mul(MWT, MWT)), max(MWT, neg(MWT))))
+3  	152   	558.406	208.143	415.814	1205.08
+Generation 3:
+Best Pr: sub(protectedDiv(add(NOR, max(PT, OWT)), neg(protectedDiv(TIS, TIS))), mul(neg(mul(MWT, MWT)), neg(add(min(WRK, protectedDiv(TIS, TIS)), PT))))
+Best Ps: sub(mul(add(sub(NOR, OWT), max(neg(PT), protectedDiv(WRK, NOR))), mul(min(NOR, MWT), sub(NOR, WRK))), PT)
+4  	152   	575.148	215.159	413.493	1205.08
+Generation 4:
+Best Pr: sub(protectedDiv(add(NOR, max(PT, OWT)), neg(protectedDiv(TIS, TIS))), mul(neg(mul(MWT, MWT)), neg(add(min(WRK, protectedDiv(sub(NOR, mul(OWT, PT)), TIS)), PT))))
+Best Ps: sub(sub(TIS, TIS), PT)
+5  	151   	582.124	230.755	416.022	1359.18
+Generation 5:
+Best Pr: sub(protectedDiv(add(NOR, max(PT, OWT)), neg(protectedDiv(TIS, TIS))), mul(neg(mul(MWT, MWT)), neg(add(min(WRK, protectedDiv(sub(NOR, mul(OWT, PT)), TIS)), PT))))
+Best Ps: mul(protectedDiv(mul(sub(max(neg(PT), protectedDiv(WRK, NOR)), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(WRK, min(protectedDiv(min(WRK, mul(sub(PT, TIS), WRK)), add(TIS, PT)), TIS))), neg(protectedDiv(MWT, OWT)))), neg(add(add(sub(WRK, OWT), mul(WRK, TIS)), protectedDiv(add(TIS, OWT), WRK))))
+6  	148   	579.546	246.424	413.493	1433.62
+Generation 6:
+Best Pr: sub(protectedDiv(add(NOR, max(PT, OWT)), neg(protectedDiv(TIS, TIS))), mul(neg(mul(MWT, MWT)), neg(add(min(WRK, protectedDiv(sub(NOR, mul(OWT, PT)), neg(WRK))), PT))))
+Best Ps: max(mul(max(neg(PT), protectedDiv(WRK, NOR)), add(neg(MWT), NOR)), add(neg(MWT), add(WRK, NOR)))
+7  	144   	566.183	248.299	411.887	1433.62
+Generation 7:
+Best Pr: neg(max(PT, OWT))
+Best Ps: mul(protectedDiv(neg(sub(PT, mul(WRK, MWT))), max(protectedDiv(protectedDiv(OWT, MWT), neg(WRK)), add(sub(MWT, PT), max(WRK, PT)))), min(WRK, WRK))
+8  	150   	517.639	179.12 	412.833	1557.77
+Generation 8:
+Best Pr: mul(min(sub(WRK, protectedDiv(NOR, TIS)), max(WRK, TIS)), mul(max(neg(WRK), TIS), neg(max(protectedDiv(neg(NOR), NOR), PT))))
+Best Ps: mul(mul(max(sub(max(MWT, MWT), PT), sub(OWT, TIS)), add(neg(protectedDiv(PT, WRK)), neg(protectedDiv(TIS, add(neg(NOR), NOR))))), add(sub(mul(OWT, MWT), MWT), protectedDiv(max(add(OWT, TIS), add(PT, PT)), add(neg(MWT), neg(PT)))))
+9  	152   	517.753	197.737	412.833	1410.11
+Generation 9:
+Best Pr: sub(protectedDiv(min(mul(neg(sub(OWT, PT)), add(NOR, NOR)), mul(mul(NOR, NOR), WRK)), neg(MWT)), mul(mul(NOR, PT), neg(add(NOR, neg(add(TIS, MWT))))))
+Best Ps: mul(protectedDiv(PT, NOR), neg(add(add(sub(WRK, OWT), mul(WRK, TIS)), protectedDiv(add(min(neg(WRK), max(MWT, OWT)), OWT), protectedDiv(NOR, protectedDiv(NOR, PT))))))
+10 	161   	538.456	216.88 	412.472	1390.98
+Generation 10:
+Best Pr: mul(min(mul(neg(sub(OWT, PT)), add(NOR, NOR)), mul(mul(NOR, NOR), WRK)), neg(min(NOR, NOR)))
+Best Ps: mul(protectedDiv(PT, NOR), neg(add(add(sub(WRK, OWT), mul(WRK, TIS)), protectedDiv(add(min(neg(WRK), max(MWT, OWT)), OWT), protectedDiv(NOR, protectedDiv(NOR, PT))))))
+11 	147   	544.848	204.345	412.833	1176.01
+Generation 11:
+Best Pr: max(protectedDiv(TIS, add(MWT, max(PT, OWT))), protectedDiv(OWT, OWT))
+Best Ps: mul(protectedDiv(mul(add(sub(WRK, MWT), protectedDiv(TIS, add(WRK, mul(OWT, add(max(OWT, OWT), OWT))))), neg(sub(WRK, MWT))), NOR), neg(add(add(sub(WRK, OWT), mul(OWT, TIS)), sub(WRK, MWT))))
+12 	154   	526.403	188.477	413.496	1368.15
+Generation 12:
+Best Pr: sub(protectedDiv(add(NOR, sub(add(PT, PT), max(MWT, PT))), neg(MWT)), mul(mul(NOR, PT), neg(add(PT, neg(add(TIS, MWT))))))
+Best Ps: sub(min(neg(sub(PT, MWT)), add(OWT, TIS)), protectedDiv(WRK, NOR))
+13 	149   	542.538	202.628	412.081	1176.01
+Generation 13:
+Best Pr: sub(protectedDiv(add(NOR, sub(add(PT, PT), max(MWT, PT))), PT), mul(mul(NOR, PT), neg(add(PT, neg(add(TIS, MWT))))))
+Best Ps: mul(protectedDiv(PT, NOR), protectedDiv(PT, neg(TIS)))
+14 	159   	540.68 	195.304	412.081	1176.01
+Generation 14:
+Best Pr: max(max(add(neg(min(OWT, neg(TIS))), min(protectedDiv(TIS, PT), add(NOR, TIS))), add(add(mul(PT, min(mul(TIS, WRK), min(MWT, PT))), add(NOR, TIS)), protectedDiv(mul(PT, MWT), neg(TIS)))), MWT)
+Best Ps: mul(protectedDiv(mul(sub(mul(OWT, TIS), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(neg(sub(MWT, MWT)), min(protectedDiv(TIS, add(TIS, min(OWT, NOR))), TIS))), TIS)), sub(WRK, PT))
+15 	154   	541.761	190.143	412.081	1176.01
+Generation 15:
+Best Pr: sub(protectedDiv(add(TIS, sub(add(PT, PT), max(MWT, PT))), protectedDiv(sub(add(MWT, max(WRK, NOR)), protectedDiv(sub(max(PT, PT), TIS), min(mul(TIS, WRK), PT))), mul(min(MWT, OWT), OWT))), mul(mul(NOR, PT), neg(add(PT, neg(add(TIS, MWT))))))
+Best Ps: mul(protectedDiv(mul(sub(mul(OWT, TIS), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(neg(sub(MWT, MWT)), MWT)), TIS)), sub(WRK, PT))
+16 	156   	538.899	187.05 	412.081	1176.01
+Generation 16:
+Best Pr: sub(protectedDiv(add(TIS, sub(add(PT, PT), max(MWT, PT))), protectedDiv(sub(add(MWT, max(WRK, NOR)), protectedDiv(sub(max(PT, PT), TIS), min(mul(TIS, WRK), PT))), mul(min(MWT, OWT), OWT))), mul(mul(NOR, PT), neg(add(PT, neg(add(TIS, MWT))))))
+Best Ps: mul(protectedDiv(mul(sub(mul(OWT, TIS), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(neg(protectedDiv(TIS, add(TIS, min(OWT, NOR)))), MWT)), TIS)), sub(WRK, PT))
+17 	154   	567.807	226.895	412.081	1176.01
+Generation 17:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(mul(WRK, OWT), max(TIS, MWT)), mul(TIS, min(max(NOR, OWT), TIS)))), add(NOR, TIS))), min(protectedDiv(OWT, TIS), protectedDiv(WRK, WRK))), protectedDiv(protectedDiv(NOR, OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(protectedDiv(mul(sub(mul(OWT, TIS), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(neg(protectedDiv(sub(TIS, TIS), sub(OWT, WRK))), min(protectedDiv(TIS, add(TIS, min(OWT, NOR))), TIS))), TIS)), sub(WRK, PT))
+18 	140   	564.517	226.887	413.896	1261.72
+Generation 18:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(mul(WRK, OWT), max(TIS, MWT)), mul(TIS, min(max(NOR, OWT), TIS)))), add(NOR, TIS))), min(protectedDiv(OWT, TIS), sub(add(MWT, max(WRK, NOR)), protectedDiv(sub(max(PT, PT), TIS), min(mul(TIS, WRK), PT))))), protectedDiv(protectedDiv(NOR, OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(protectedDiv(mul(sub(mul(OWT, TIS), max(WRK, TIS)), neg(sub(TIS, NOR))), add(neg(min(neg(protectedDiv(sub(mul(PT, PT), protectedDiv(PT, PT)), add(TIS, TIS))), MWT)), TIS)), sub(WRK, PT))
+19 	147   	566.546	240.282	412.419	1565.75
+Generation 19:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(protectedDiv(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), add(neg(mul(NOR, WRK)), TIS))), max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), TIS)), add(PT, neg(add(TIS, MWT)))), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), min(OWT, PT)), OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(min(sub(min(TIS, neg(max(OWT, MWT))), WRK), sub(neg(MWT), protectedDiv(MWT, OWT))), max(neg(mul(OWT, MWT)), protectedDiv(sub(WRK, TIS), NOR))), add(neg(TIS), PT)), min(min(PT, NOR), add(TIS, PT)))
+20 	156   	575.016	248.781	412.419	1565.75
+Generation 20:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(protectedDiv(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), add(neg(mul(NOR, WRK)), TIS))), max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), TIS)), add(TIS, neg(add(TIS, MWT)))), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), min(OWT, PT)), OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(WRK, max(neg(mul(sub(PT, MWT), TIS)), protectedDiv(protectedDiv(WRK, MWT), max(neg(OWT), PT)))), add(TIS, PT)), OWT)
+21 	152   	563.389	233.083	412.419	1565.75
+Generation 21:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(protectedDiv(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), add(neg(mul(NOR, WRK)), TIS))), max(max(mul(WRK, OWT), max(TIS, MWT)), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), TIS)), sub(MWT, NOR)), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), max(PT, TIS)), OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(WRK, max(neg(mul(sub(PT, MWT), TIS)), protectedDiv(protectedDiv(WRK, MWT), max(neg(min(OWT, NOR)), PT)))), add(TIS, PT)), OWT)
+22 	154   	554.17 	200.091	412.419	1339.2
+Generation 22:
+Best Pr: max(max(add(neg(min(PT, WRK)), min(sub(mul(TIS, WRK), neg(add(mul(min(WRK, TIS), protectedDiv(PT, NOR)), MWT))), add(NOR, TIS))), add(add(mul(PT, NOR), add(NOR, protectedDiv(OWT, MWT))), neg(NOR))), protectedDiv(protectedDiv(NOR, OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(WRK, max(neg(mul(neg(mul(OWT, protectedDiv(NOR, NOR))), MWT)), protectedDiv(protectedDiv(WRK, MWT), max(neg(OWT), PT)))), add(TIS, PT)), OWT)
+23 	153   	534.197	177.468	412.419	1176.01
+Generation 23:
+Best Pr: neg(max(PT, protectedDiv(neg(OWT), NOR)))
+Best Ps: mul(add(mul(WRK, max(neg(mul(neg(mul(OWT, protectedDiv(NOR, MWT))), MWT)), protectedDiv(protectedDiv(WRK, MWT), max(neg(OWT), PT)))), add(TIS, PT)), OWT)
+24 	163   	565.647	217.952	410.796	1178.22
+Generation 24:
+Best Pr: min(TIS, neg(mul(max(min(PT, MWT), min(PT, PT)), add(NOR, MWT))))
+Best Ps: mul(add(mul(WRK, max(neg(mul(neg(mul(OWT, protectedDiv(NOR, MWT))), MWT)), protectedDiv(protectedDiv(WRK, MWT), max(PT, PT)))), add(TIS, PT)), OWT)
+25 	156   	537.015	178.994	412.419	1176.01
+Generation 25:
+Best Pr: neg(max(add(PT, MWT), sub(PT, neg(neg(OWT)))))
+Best Ps: mul(add(mul(WRK, max(neg(mul(neg(mul(OWT, protectedDiv(NOR, max(OWT, PT)))), MWT)), protectedDiv(protectedDiv(WRK, MWT), max(PT, PT)))), add(TIS, PT)), OWT)
+26 	156   	528.513	185.965	410.796	1176.01
+Generation 26:
+Best Pr: max(min(neg(MWT), protectedDiv(WRK, OWT)), sub(sub(PT, protectedDiv(TIS, min(NOR, sub(neg(MWT), min(PT, WRK))))), NOR))
+Best Ps: mul(add(mul(min(max(TIS, max(add(sub(MWT, MWT), PT), protectedDiv(add(max(WRK, OWT), protectedDiv(max(add(OWT, TIS), NOR), add(neg(MWT), MWT))), max(OWT, TIS)))), max(OWT, MWT)), max(neg(mul(OWT, protectedDiv(NOR, NOR))), protectedDiv(sub(TIS, TIS), NOR))), add(TIS, neg(neg(mul(neg(mul(OWT, protectedDiv(NOR, NOR))), MWT))))), min(protectedDiv(min(protectedDiv(NOR, WRK), neg(PT)), TIS), add(TIS, WRK)))
+27 	157   	534.333	188.79 	410.92 	1315.06
+Generation 27:
+Best Pr: min(NOR, neg(mul(add(MWT, sub(WRK, sub(sub(MWT, PT), max(MWT, MWT)))), add(NOR, WRK))))
+Best Ps: sub(min(sub(add(WRK, MWT), mul(PT, TIS)), sub(TIS, TIS)), WRK)
+28 	152   	523.03 	190.842	410.559	1586.82
+Generation 28:
+Best Pr: min(NOR, neg(mul(add(MWT, sub(WRK, sub(sub(MWT, PT), max(MWT, MWT)))), add(NOR, WRK))))
+Best Ps: mul(add(mul(min(max(TIS, max(add(sub(MWT, MWT), PT), protectedDiv(add(max(WRK, OWT), protectedDiv(max(add(OWT, TIS), WRK), add(neg(PT), MWT))), max(OWT, TIS)))), max(OWT, MWT)), max(neg(mul(OWT, protectedDiv(NOR, NOR))), protectedDiv(sub(TIS, TIS), NOR))), add(TIS, neg(neg(mul(neg(mul(OWT, protectedDiv(NOR, NOR))), MWT))))), min(protectedDiv(min(protectedDiv(NOR, WRK), neg(PT)), TIS), add(TIS, WRK)))
+29 	150   	537.084	211.731	410.655	1586.82
+Generation 29:
+Best Pr: min(NOR, neg(mul(add(MWT, sub(WRK, sub(sub(OWT, PT), max(MWT, WRK)))), add(NOR, WRK))))
+Best Ps: mul(add(mul(min(protectedDiv(protectedDiv(WRK, OWT), NOR), sub(WRK, OWT)), max(add(neg(mul(add(WRK, WRK), sub(TIS, PT))), PT), protectedDiv(max(mul(sub(max(TIS, OWT), min(OWT, NOR)), protectedDiv(OWT, add(NOR, MWT))), min(NOR, PT)), max(OWT, PT)))), add(TIS, PT)), NOR)
+30 	140   	529.466	212.094	410.559	1604.95
+Generation 30:
+Best Pr: sub(add(sub(sub(MWT, PT), max(min(protectedDiv(MWT, TIS), WRK), MWT)), WRK), MWT)
+Best Ps: mul(add(mul(min(max(TIS, max(add(min(protectedDiv(TIS, TIS), sub(TIS, NOR)), PT), WRK)), WRK), max(neg(mul(OWT, protectedDiv(NOR, NOR))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+31 	154   	539.154	204.132	410.655	1489.75
+Generation 31:
+Best Pr: min(NOR, neg(mul(add(MWT, sub(OWT, sub(sub(MWT, PT), max(min(protectedDiv(MWT, TIS), TIS), MWT)))), add(NOR, WRK))))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(OWT, protectedDiv(NOR, NOR))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+32 	153   	567.862	233.365	410.559	1391.02
+Generation 32:
+Best Pr: min(NOR, neg(mul(add(MWT, sub(OWT, sub(sub(MWT, PT), max(sub(PT, NOR), MWT)))), add(NOR, WRK))))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(OWT, protectedDiv(NOR, NOR))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+33 	162   	580.361	251.417	410.655	1604.95
+Generation 33:
+Best Pr: protectedDiv(max(TIS, MWT), max(add(add(MWT, PT), max(OWT, NOR)), MWT))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(OWT, protectedDiv(PT, NOR))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+34 	151   	567.884	230.258	410.559	1407.5
+Generation 34:
+Best Pr: max(max(add(TIS, min(protectedDiv(add(neg(min(PT, WRK)), min(protectedDiv(TIS, max(max(OWT, MWT), mul(max(WRK, PT), min(max(NOR, OWT), TIS)))), add(neg(mul(NOR, WRK)), TIS))), max(max(neg(NOR), add(mul(WRK, WRK), TIS)), mul(WRK, neg(NOR)))), TIS)), PT), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), TIS), PT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(TIS), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+35 	148   	568.246	244.568	410.655	1420.87
+Generation 35:
+Best Pr: sub(add(neg(PT), WRK), MWT)
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(MWT, protectedDiv(PT, NOR))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+36 	150   	538.315	193.678	410.569	1145.93
+Generation 36:
+Best Pr: max(max(MWT, PT), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), TIS), PT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(MWT, protectedDiv(PT, sub(add(NOR, NOR), neg(MWT))))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+37 	151   	561.164	219.736	410.655	1147.56
+Generation 37:
+Best Pr: sub(protectedDiv(NOR, TIS), add(PT, PT))
+Best Ps: mul(min(PT, PT), sub(sub(PT, add(TIS, WRK)), PT))
+38 	142   	559.982	231.28 	410.655	1306.97
+Generation 38:
+Best Pr: max(max(MWT, sub(PT, TIS)), protectedDiv(protectedDiv(max(protectedDiv(TIS, TIS), TIS), OWT), protectedDiv(PT, NOR)))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(MWT, protectedDiv(PT, sub(add(NOR, NOR), neg(MWT))))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(MWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+39 	153   	582.392	237.606	410.655	1170.18
+Generation 39:
+Best Pr: protectedDiv(neg(add(protectedDiv(NOR, NOR), mul(TIS, NOR))), sub(protectedDiv(MWT, PT), PT))
+Best Ps: mul(add(mul(min(max(TIS, OWT), WRK), max(neg(mul(MWT, protectedDiv(PT, sub(add(NOR, NOR), neg(MWT))))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(MWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+40 	145   	574.505	230.758	410.559	1358.4
+Generation 40:
+Best Pr: mul(sub(PT, TIS), neg(TIS))
+Best Ps: mul(add(mul(min(max(TIS, WRK), WRK), max(neg(mul(max(MWT, NOR), protectedDiv(PT, sub(add(NOR, NOR), neg(MWT))))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(MWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+41 	153   	556.507	205.605	410.655	1447.66
+Generation 41:
+Best Pr: mul(add(PT, MWT), neg(NOR))
+Best Ps: mul(add(mul(min(max(TIS, WRK), WRK), max(neg(mul(max(MWT, NOR), protectedDiv(PT, sub(add(NOR, NOR), neg(MWT))))), protectedDiv(neg(MWT), NOR))), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, WRK)))
+42 	154   	574.26 	221.665	410.655	1515.92
+Generation 42:
+Best Pr: mul(sub(PT, NOR), neg(protectedDiv(NOR, TIS)))
+Best Ps: mul(add(min(neg(TIS), neg(OWT)), protectedDiv(protectedDiv(max(max(NOR, WRK), neg(OWT)), MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, MWT)))
+43 	146   	568.765	218.414	410.601	1365.28
+Generation 43:
+Best Pr: protectedDiv(NOR, mul(add(OWT, PT), neg(neg(TIS))))
+Best Ps: mul(add(min(neg(TIS), neg(OWT)), protectedDiv(protectedDiv(WRK, MWT), sub(OWT, WRK))), min(protectedDiv(TIS, TIS), add(TIS, MWT)))
+44 	145   	554.964	207.531	410.92 	1170.21
+Generation 44:
+Best Pr: sub(add(NOR, max(PT, sub(mul(TIS, TIS), PT))), neg(mul(NOR, WRK)))
+Best Ps: max(protectedDiv(min(WRK, TIS), min(NOR, PT)), neg(add(OWT, MWT)))
+45 	144   	542.759	215.788	410.92 	1556.75
+Generation 45:
+Best Pr: protectedDiv(mul(PT, NOR), neg(TIS))
+Best Ps: neg(PT)
+46 	148   	538.667	227.286	410.92 	1556.75
+Generation 46:
+Best Pr: protectedDiv(NOR, mul(min(protectedDiv(add(MWT, TIS), max(max(neg(NOR), mul(sub(sub(NOR, NOR), NOR), TIS)), min(mul(WRK, add(OWT, NOR)), mul(PT, NOR)))), TIS), neg(NOR)))
+Best Ps: mul(PT, min(min(MWT, sub(WRK, TIS)), add(NOR, MWT)))
+47 	144   	543.299	224.425	410.92 	1602.8
+Generation 47:
+Best Pr: sub(PT, add(protectedDiv(neg(add(min(TIS, MWT), TIS)), PT), TIS))
+Best Ps: neg(sub(protectedDiv(PT, TIS), TIS))
+48 	156   	537.081	193.686	410.92 	1267.97
+Generation 48:
+Best Pr: max(max(add(TIS, min(mul(protectedDiv(NOR, PT), add(NOR, PT)), TIS)), PT), protectedDiv(add(max(WRK, TIS), MWT), OWT))
+Best Ps: neg(min(mul(PT, add(min(mul(MWT, WRK), sub(protectedDiv(NOR, OWT), protectedDiv(MWT, OWT))), PT)), TIS))
+49 	155   	556.077	213.912	410.92 	1267.97
+Generation 49:
+Best Pr: sub(protectedDiv(NOR, PT), add(WRK, MWT))
+Best Ps: neg(min(mul(PT, add(min(mul(MWT, WRK), protectedDiv(protectedDiv(MWT, TIS), add(NOR, PT))), PT)), TIS))

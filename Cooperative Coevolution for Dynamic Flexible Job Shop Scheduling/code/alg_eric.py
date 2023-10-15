@@ -162,13 +162,15 @@ for gen in range(N_GEN):
     if elite_Ps.fitness.values < cvs.fitness.values:
         cvs = elite_Ps
     # 记录本代的统计信息
+    # 记录本代的统计信息
     record = stats.compile(Pr + Ps) if stats else {}
     logbook.record(gen=gen, nevals=len(Pr) + len(Ps), **record)
-    #print(logbook.stream)  # 输出本代的统计信息
+    print(logbook.stream)  # 输出本代的统计信息
     print(f"Generation {gen}:")
     print(f"Best Pr: {(elite_Pr)}")
     print(f"Best Ps: {(elite_Ps)}")
     print("gen	nevals	avg    	std    	min   	max ")
+
 # 返回上下文向量
 cv = (cvr, cvs)
 
