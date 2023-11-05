@@ -6,11 +6,11 @@ class TreeNode:
         self.right = right
         self.root = 'Max'
 def parse_expression(expression):
-    operators = ['protectedDiv','Max', 'Min', '+', '-', '*', '/', 'max', 'min', 'neg', 'add', 'sub', 'mul', 'div']
+    operators = ['protectedDiv','Max', 'Min', '+', '-', '*', '/', 'max', 'min', 'neg', 'add', 'sub', 'mul', 'Div']
     variables = ['NIQ', 'WIQ', 'MRT', 'TTIQ', 'UT', 'DT', 'PT', 'TWT', 'TIS', 'NTR', 'MWT', 'OWT', 'WRK']
 
     tokens = expression.replace('(', ' ( ').replace(')', ' ) ').split()
-
+    print(tokens)
     output = []  # 用于后缀表达式tokens
     ops = []  # 用于操作符和括号
     num1=0
@@ -50,7 +50,7 @@ def create_binary_tree(postfix_tokens,Dict):
     stack = []
 
     for token in postfix_tokens:
-        if Dict[token] not in ['Max', 'Min', '+', '-', '*', '/']:
+        if Dict[token] not in ['Max', 'Min', '+', '-', '*', '/','Div','sub','add','min','max','mul','neg']:
             stack.append(TreeNode(token))
         else:
             right = stack.pop()

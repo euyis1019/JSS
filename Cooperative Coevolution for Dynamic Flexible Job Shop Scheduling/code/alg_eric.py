@@ -11,7 +11,6 @@ from thesis.alg1.common import get_random_config
 from thesis.job_shop_simulator import Instance, Config
 
 
-# 定义保护除法，防止除数为0
 def Div(left, right):
     try:
         return left / right
@@ -79,7 +78,6 @@ def evolve_population(toolbox, population, n_offspring):
     return offspring
 
 
-# 定义你的问题的特定参数
 POP_SIZE = 100
 N_GEN = 50
 N_OFFSPRING = 50
